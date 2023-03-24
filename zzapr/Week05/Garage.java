@@ -31,7 +31,7 @@ public class Garage {
         if (0 < carCounter) {
             mostExpensive = cars[0];
 
-            for (int i = 1; 1 < carCounter; i++) {
+            for (int i = 1; i < carCounter; i++) {
                 if (mostExpensive.getPricePaid() <
                         cars[i].getPricePaid()) {
                     mostExpensive = cars[i];
