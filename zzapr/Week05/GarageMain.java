@@ -1,21 +1,28 @@
 package zzapr.Week05;
 
-public class GarageMain {
+
+    public class GarageMain {
+
+        public static void main(String[] args) {
+            Car car01 = new Car("Fiat", "500", 10000, 10500);
 
 
-    public static void main(String[] args) {
+            Car car02 = new Car("Skoda", "Fabia", 8000, 30895);
 
-        Car car01 = new Car(  "Fiat", "500",1000,10500);
+            Garage garage01 = new Garage();
+            garage01.addCarToGarage(car01);
+            garage01.addCarToGarage(car02);
+
+            System.out.println(garage01);
+
+            System.out.println("The most expensive car is: " + garage01.getMostExpensiveCar());
 
 
-        Car car02 = new Car("Skoda","Fabia",8000,30895);
 
-        Garage garage01 = new Garage();
-        garage01.addCarToGarage(car01);
-        garage01.addCarToGarage(car02);
 
-        System.out.println("The most expensive car in garage is:" +
-        garage01.getMostExpensiveCar());
+
+
+
 
 
 
